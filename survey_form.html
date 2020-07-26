@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Survey form</title>
+    <link rel="stylesheet" href="survey_form.css">
+  </head>
+  <body class="background">
+    <div class="layer">
+    <header>
+      <h1 id="title" style="margin-top: 0px;">freeCodeCampSurvey form</h1>
+      <p id="description"> Thank you for taking this survey to help improve the platform</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <p><label for="name" id="name-label">Name</label><p>
+        <input type="text" id="name" placeholder="Enter your name" class="modify-box"required>
+
+              <p><label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" placeholder="Enter your e-mail" class="modify-box" required></p>
+
+                <p><label for="number" id="number-label">Age (optional)<br>
+        <input type="number" id="number"  class="modify-box" placeholder="Age" min= "12" max= "65" required></label></p>
+
+                <p><label for="dropdown">Which option best describes your current role?</label><p>
+        <select id="dropdown" class="modify-box">
+          <option value="choose">Choose one</option>
+          <option value="student">Student</option>
+           <option value="working">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="noAnswer">Prefer not to say</option>
+           <option value="other">Other</option>
+        </select>
+
+
+        <fieldset id="radRecommendaitons" >
+        <p>Would you recommend free code camp to a friend?</p>
+        <p><input type="radio" id="radDef" name="radRecommend" value="definitely">Definitely</p>
+        <p><input type="radio" id="radMay" name="radRecommend" value="maybe">Maybe</p>
+        <p><input type="radio" id="radNo" name="radRecommend" value="no">Not sure</p>
+        </fieldset>
+
+
+
+        <p>What is your favourite feature?</p>
+        <select id ="selFeature" class="modify-box">
+          <option value="challenge">Challenges</option>
+          <option value="projects">Projects</option>
+           <option value="community">Community</option>
+          <option value="open">Open source</option>
+         </select>
+
+       <div>
+        <p>What would you like to see improved? (check all that apply)</p>
+        <p><label for="chkFront"> <input type="checkbox" id="chkFront" value="front">Front-End Projects</label></p>
+               <p><label for="chkBack"> <input type="checkbox" id="chkBack" value="back">Back-End Prokects</label></p>
+               <p><label for="chkData"> <input type="checkbox" id="chkData" value="data">Data Visualization</label></p>
+               <p><label for="chkChallenges"> <input type="checkbox" id="chkChallenges" value="challenges">Challenges</label></p>
+                       <p><label for="chkOpen"> <input type="checkbox" id="chkopen" value="data">Open source community</label></p>
+                       <p><label for="chkGitter"> <input type="checkbox" id="chkGitter" value="data">Gitter help rooms</label></p>
+                       <p><label for="chkVideos"> <input type="checkbox" id="chkVideo" value="data">Videos</label></p>
+                       <p><label for="chkMeet"> <input type="checkbox" id="chkMeet" value="data">City meetups</label></p>
+        <p><label for="chkWiki"> <input type="checkbox" id="chkWiki" value="data">Wiki</label></p>
+        <p><label for="chkForum"> <input type="checkbox" id="chkForum" value="data">Forum</label></p>
+        <p><label for="chkAdd"> <input type="checkbox" id="chkAdd" value="data">Additional Courses</label></p>
+      </div>
+      <div>
+        <p>Any additional comments?</p>
+        <textarea id="txtarAdd" rows="10" cols="60" class="modify-box"></textarea>
+        <p><button type="submit" id="submit" class="modify-box">Submit</button></p>
+      </div>
+      </form>
+    </main>
+  </div>
+  </body>
+  </html>

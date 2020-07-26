@@ -1,0 +1,44 @@
+header{
+  text-align: center;
+  color: #ffffff;
+}
+
+#survey-form{
+margin:auto;
+width: 40%;
+
+padding: 30px;
+border-radius: 8px;
+color: white;
+background-color: rgba(7, 0, 19, 0.7);
+}
+
+h1{margin: 0px;
+padding-top: 20px;}
+
+#radRecommendaitons{
+  margin: 10px 0px;
+}
+ .modify-box{
+width: 100%;
+ }
+html{margin: 0px;}
+
+.background{
+background: url("surveybg.jpg");
+margin: 0px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.layer{
+background-color: rgba(48, 14, 108, 0.4);
+margin: 0px;
+}
+
+button{
+  padding: 10px;
+  background-color: green;
+  border:none;
+  color: white;
+}
